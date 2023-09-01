@@ -6,6 +6,10 @@ export const PlayerContainer = styled.section`
     padding-top: 40px;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
 `;
 
 export const Title = styled.h2``;
@@ -15,15 +19,13 @@ export const Artist = styled.h3`
 `;
 
 export const Counter = styled.p`
-    position: absolute;
-    right: 10px;
-    top: 45px;
+    padding-top: 5px;
     font-weight: bold;
 `;
 
 export const Controls = styled.div`
     position: absolute;
-    bottom: 50px;
+    bottom: 75px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -53,4 +55,10 @@ export const Switch = styled.button`
         width: 100%;
         height: 100%;
     }
+`;
+
+export const ProgressBar = styled.progress`
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
 `;
