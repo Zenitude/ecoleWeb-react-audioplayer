@@ -4,7 +4,7 @@ export const playMusic = (
     button: string,
     play: string,
     pause: string,
-    audio: React.MutableRefObject<HTMLAudioElement | null>,
+    audio: React.MutableRefObject<HTMLAudioElement | null>
 ) => {
     e.preventDefault();
     

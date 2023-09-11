@@ -13,6 +13,4 @@ export const selectMusic = (
         audio.current?.play();
         setPlayButton(PauseIcon);
     }, 100)
-    
-    
 }
