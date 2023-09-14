@@ -10,30 +10,6 @@ export type PlaylistType = {
 export type PlaylistProps = {
     title : string;
     position: number;
-    /*musics: Music[];
-    set: React.Dispatch<React.SetStateAction<number>>
-    audio: React.RefObject<HTMLAudioElement>;*/
-}
-
-/*export type Music = {
-    title: string;
-    artist: string;
-}*/
-
-/*export type PlayerProps = {
-    source: {
-        song: PlaylistType;
-        time: TimesAudio;
-    };
-    current: number;
-    max: number;
-    set: React.Dispatch<React.SetStateAction<number>>;
-    audioRef: React.RefObject<HTMLAudioElement>;
-}*/
-
-export type TimesAudio = {
-    current: any;
-    duration: any;
 }
 
 export type ContextProps = {
@@ -42,8 +18,6 @@ export type ContextProps = {
 
 export type CurrentType = {
     song: PlaylistType;
-    time: TimesAudio;
-    play: boolean;
 }
 
 export type ContextType = {
@@ -55,5 +29,4 @@ export type ContextType = {
     audioRef: React.MutableRefObject<HTMLAudioElement | null>;
     playButton: string;
     setPlayButton: React.Dispatch<React.SetStateAction<string>>;
-
 }

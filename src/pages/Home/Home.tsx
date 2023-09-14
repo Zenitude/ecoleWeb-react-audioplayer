@@ -9,16 +9,12 @@ import Player from "../../components/Player/Player";
 
 export default function Home () {
 
-    const { playlist, index, setCurrentSong, audioRef } = useContext(Context)!;
+    const { playlist, index, setCurrentSong } = useContext(Context)!;
 
     useEffect(() => {
         setCurrentSong((prevSong) => {
             const previousSong = {...prevSong};
             previousSong.song = playlist[index];
-            previousSong.time = {
-                current: audioRef.current?.currentTime,
-                duration: audioRef.current?.duration
-            }
             return previousSong;
         })
     }, [index])

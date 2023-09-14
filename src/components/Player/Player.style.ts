@@ -56,9 +56,3 @@ export const Switch = styled.button`
         height: 100%;
     }
 `;
-
-export const ProgressBar = styled.progress`
-    width: 100%;
-    position: absolute;
-    bottom: 20px;
-`;

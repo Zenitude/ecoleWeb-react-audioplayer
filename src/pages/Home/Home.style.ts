@@ -19,6 +19,10 @@ export const GlobalStyle: any = createGlobalStyle`
         color: #f1f1f1;
         background-color: #7a75d7;
     }
+
+    audio {
+        display: none;
+    }
 `;
 
 export const HomeContainer = styled.main` 
